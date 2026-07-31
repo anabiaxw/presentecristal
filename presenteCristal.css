@@ -1,0 +1,79 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    background-color: rgb(79, 150, 181);
+    margin: 0;
+}
+.fundo {
+    background-color: rgba(255, 255, 255, 0.354);
+    margin: 50px;
+    padding: 20px;
+    border-radius: 30px;
+}
+.container {
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 10px;
+}
+.gatinho {
+    width: 200px;
+    max-width: 28vw;
+    height: auto;
+    flex-shrink: 0;
+}
+h1 {
+font-family: "Coiny", system-ui;
+  font-weight: 400;
+  font-style: normal;
+  text-align: center;
+  font-size: clamp(16px, 5vw, 30px);
+  color: antiquewhite;
+  margin: 0;
+  flex: 1;
+}
+h2 {
+    font-family: "Cause", cursive;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  text-align: center;
+  padding-left: 20px;
+  padding-right: 20px;
+  font-size: clamp(20px, 2.5vw, 25px);
+  color: antiquewhite;
+}
+.imagens {
+    justify-content: space-between;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+.foto-redonda {
+    display: block;
+    margin: auto;
+    width: 400px;
+    max-width: 60vw;
+    height: auto;
+    border-radius: 100%;
+    flex: 1 1 250px;
+}
+.presente {
+    width: 600px;
+    max-width: 90vw;
+    display: block;
+    margin: 20px auto 0;
+    height: auto;
+}
+
+@media (max-width: 768px) {
+    .fundo {
+        margin: 15px;
+        padding: 15px;
+    }
+    .container {
+        gap: 5px;
+    }
+}
